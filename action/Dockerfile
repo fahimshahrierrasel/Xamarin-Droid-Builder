@@ -5,6 +5,6 @@ LABEL name="Xamarin-Droid-Builder"
 LABEL com.github.actions.icon="terminal"
 LABEL com.github.actions.color="blue"
 
-COPY LICENSE READM.md /
+COPY LICENSE README.md /
 ENTRYPOINT ["xabuild"]
 CMD ["/help"]
