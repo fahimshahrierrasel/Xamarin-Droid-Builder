@@ -10,7 +10,7 @@ jobs:
       - name: Building APK
         uses: ./action
         with:
-          args: /t:SignAndroidPackage HelloWorld/HelloWorld/HelloWorld.csproj
+          args: /r:True HelloWorld/HelloWorld/HelloWorld.csproj
       - name: Upload Artifacts
         uses: ./action
         with:
