@@ -4,17 +4,15 @@ jobs:
   build:
     name: Build APK
     runs-on: ubuntu-latest
-    env:
-      PROJECT_NAME: HelloWorld
     steps:
       - uses: actions/checkout@master
 
       - name: Building APK
         uses: ./action
         with:
-          args: /t:SignAndroidPackage ${{PROJECT_NAME}}/${{PROJECT_NAME}}/${{PROJECT_NAME}}.csproj
+          args: /t:SignAndroidPackage HelloWorld/HelloWorld/HelloWorld.csproj
       - name: Upload Artifacts
         uses: ./action
         with:
           name: Upload APK
-          path: ${{PROJECT_NAME}}/${{PROJECT_NAME}}/bin/Debug/*.apk
+          path: HelloWorld/HelloWorld/bin/Debug/*.apk
