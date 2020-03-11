@@ -11,8 +11,5 @@ jobs:
         uses: ./action
         with:
           args: /r:True HelloWorld/HelloWorld/HelloWorld.csproj
-      - name: Upload Artifacts
-        uses: ./action
-        with:
-          name: Upload APK
-          path: HelloWorld/HelloWorld/bin/Debug/*.apk
+          path: HelloWorld/HelloWorld/bin/Debug
+          
