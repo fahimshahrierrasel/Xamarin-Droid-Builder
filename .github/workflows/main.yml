@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-
       - name: Building APK
         uses: ./action
         with:
@@ -14,5 +13,7 @@ jobs:
       - name: Artifacts
         with:
           name: Android Apk
-          path: HelloWorld/HelloWorld.Android/bin/debug
+          run: mkdir -p /github/workspace/apks
+          run: cp HelloWorld/HelloWorld.Android/bin/debug/*.apk /github/workspace/apks
+          path: /github/workspace/apks
           
