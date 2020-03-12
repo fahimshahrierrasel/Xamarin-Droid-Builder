@@ -13,7 +13,9 @@ jobs:
       - name: Artifacts
         run: |
           mkdir -p apks
-          cp HelloWorld/HelloWorld.Android/bin/debug/*.apk apks
+          pwd
+          ls -al
+          cp HelloWorld/HelloWorld.Android/bin/Debug/*.apk apks
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
         with:
