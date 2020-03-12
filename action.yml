@@ -1,6 +1,8 @@
 name: 'Generate Xamarin Form Android APK'
 description: 'Build and Generate Xamarin Form and Xamarin Android APK and upload it as artifact'
 author: 'Fahim Shahrier Rasel'
+icon: 'activity'
+color: 'blue'
 inputs:
   SOLUTION_NAME:
     description: 'Solution Name or the root folder name.'
