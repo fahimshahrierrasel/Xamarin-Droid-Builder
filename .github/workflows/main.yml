@@ -12,11 +12,11 @@ jobs:
           args: /r:True /t:SignAndroidPackage /p:AndroidSdkDirectory=/android/sdk HelloWorld/HelloWorld.Android/HelloWorld.Android.csproj
       - name: Artifacts
         run: |
-          mkdir -p /github/workspace/apks
-          cp HelloWorld/HelloWorld.Android/bin/debug/*.apk /github/workspace/apks
+          mkdir -p apks
+          cp HelloWorld/HelloWorld.Android/bin/debug/*.apk apks
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
         with:
           name: apks
-          path: /github/workspace/apks
+          path: apks
           
