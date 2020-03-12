@@ -15,7 +15,7 @@ jobs:
         run: cp HelloWorld/HelloWorld.Android/bin/debug/*.apk /github/workspace/apks
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
-          with:
-            name: apks
-            path: /github/workspace/apks
+        with:
+          name: apks
+          path: /github/workspace/apks
           
