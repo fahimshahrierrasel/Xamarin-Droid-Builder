@@ -1,0 +1,13 @@
+name: 'Generate Xamarin Form Android APK'
+description: 'Build and Generate Xamarin Form and Xamarin Android APK and upload it as artifact'
+author: 'Fahim Shahrier Rasel'
+inputs:
+  SOLUTION_NAME:
+    description: 'Solution Name or the root folder name.'
+    required: true
+  ANDROID_PROJECT_NAME:
+    description: 'Android Project name or the folder name of the android project usually its end with .Android as postfix.'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
