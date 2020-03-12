@@ -10,6 +10,9 @@ jobs:
       - name: Building APK
         uses: ./action
         with:
-          args: /r:True HelloWorld/HelloWorld/HelloWorld.csproj
-          path: HelloWorld/HelloWorld/bin/Debug
+          args: /r:True /t:SignAndroidPackage /p:AndroidSdkDirectory=/android/sdk HelloWorld/HelloWorld.Android/HelloWorld.Android.csproj
+      - name: Artifacts
+        with:
+          name: Android Apk
+          path: HelloWorld/HelloWorld.Android/bin/debug
           

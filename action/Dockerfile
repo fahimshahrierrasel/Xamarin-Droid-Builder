@@ -1,4 +1,4 @@
-from vonproteus/xamarin-android-docker
+FROM vonproteus/xamarin-android-docker
 
 LABEL version="0.1.0"
 LABEL name="Xamarin-Droid-Builder"
