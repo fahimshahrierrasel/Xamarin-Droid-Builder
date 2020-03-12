@@ -4,7 +4,9 @@ Build and Generate Android APK for `Xamarin Form` and `Xamarin Android`.
 ## Usage
 First Need to set 2 variable in secrets in Github project settings.
 Variables Names are
+
 `SOLUTION_NAME` : Solution Name or the root folder name.
+
 `ANDROID_PROJECT_NAME` : Android Project name or the folder name of the android project usually its end with `.Android` as postfix.
 
 Main Workflow:
