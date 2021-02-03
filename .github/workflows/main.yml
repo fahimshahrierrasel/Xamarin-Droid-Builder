@@ -1,5 +1,11 @@
-on: push
 name: Build and Generate Android Apk
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Will you build now?'
+        required: true
+        default: false
 env:
   SOLUTION_NAME: ${{secrets.SOLUTION_NAME}}
   ANDROID_PROJECT_NAME: ${{secrets.ANDROID_PROJECT_NAME}}
